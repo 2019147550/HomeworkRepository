@@ -60,10 +60,6 @@ section{
     align-items: center;
     justify-content: space-around;
 }
-/* .section1 > .left__col > img{
-    width: 10rem;
-    height: calc(10rem / 2320 * 3088);
-} */
 
 .section1 > .right__col{
     display: flex;
