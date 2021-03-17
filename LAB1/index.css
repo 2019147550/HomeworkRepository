@@ -53,7 +53,6 @@ section{
     background-color: rgb(215, 221, 221);
     padding: 2rem;
     border-radius: 2rem;
-    /* box-shadow: 4px 5px rgb(70, 70, 70, 0.8); */
 }
 .section1 > .left__col{
     display: flex;
