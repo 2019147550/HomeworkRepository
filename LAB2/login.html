@@ -18,7 +18,7 @@
             <div class="title">Welcome to Internet Programming Shop</div>
             <div class="login__wrapper">
                 <div class="login__title">Login</div>
-                <form class="input__container" method="get">
+                <form class="input__container" id="loginform" method="get">
                     <!-- <div>개인정보(필수)</div> -->
 
                     <div class="label">아이디</div>
@@ -41,7 +41,13 @@
                     />
                 </form>
                 <div class="link__container">
-                    <button type="submit" class="login__button">Login</button>
+                    <button
+                        type="submit"
+                        class="login__button"
+                        form="loginform"
+                    >
+                        Login
+                    </button>
                     <a href="signup.html" class="signup__link">Sign up</a>
                 </div>
             </div>
