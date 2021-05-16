@@ -159,11 +159,15 @@ button {
 .index__wrapper {
     width: 1020px;
     border: 1px solid;
-    height: 100vh;
+    height: auto ;
     background-color: white;
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
+    overflow-y: scroll;
+}
+.index__body{
+    height: auto;
 }
 .index__title {
     font-size: 1.5rem;
@@ -190,9 +194,9 @@ button {
 .index__body {
     width: 1020px;
     border: 1px solid;
-    height: 500px;
+    height: auto;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     margin-top: 1rem;
 }
 .index__body > .title {
@@ -204,7 +208,23 @@ button {
     font-family: "Kiwi Maru", serif;
     font-weight: 700;
 
+
     transform: none;
+}
+
+.index__body > .left_body{
+    border: 1px solid;
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+.index__body > .right_body{
+    border:1px solid;
+    height: auto;
+    width:70%;
+    display: flex;
+    flex-direction: column;
 }
 .product__container {
     display: flex;
@@ -242,6 +262,41 @@ button {
     column-rule-style: solid;
     column-rule-color: rgba(32, 70, 240, 0.959);
     column-rule-width: 1px;
+}
+/* inputs */
+#priceRangeInput{
+    display: flex;
+    flex-direction: column;
+}
+#searchTerm{
+    width: 250px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+#search_box{
+    padding: 1rem;
+}
+/* coin block */
+.coin_block{
+    width: 100%;
+    border: 1px solid;
+    min-height: 20vh;
+    height: auto;
+    padding: 1rem;
+}
+img.coin_img{
+    width: 50px;
+    margin-top: 1rem;
+}
+.description{
+    width: 70%;
+}
+.code{
+    font-size: 1.5rem;
+}
+.price{
+    margin-top: 1rem;
+    font-size: 1.5rem;
 }
 @keyframes slide_right_to_left {
     0% {
