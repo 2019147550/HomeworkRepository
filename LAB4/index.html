@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap" rel="stylesheet" />
+    <title>main page</title>
+</head>
+
+<body>
+    <div class="view">
+        <div class="index__wrapper">
+            <div class="index__header">
+                <div class="index__title">안녕하세요 마켓컬리입니다.</div>
+                <nav class="index__navlink">
+                    <a href="index.html" class="lined">메인페이지</a>
+                    <a href="login.html">로그인</a>
+                    <a href="signup.html">회원가입</a>
+                </nav>
+            </div>
+            <div class="index__body">
+                <div class="left_body">
+                    <div id="search_box">
+                        <div>
+                            <label for="searchTerm">Enter Crypto currency name:</label>
+                            <input type="text" id="searchTerm" placeholder="ex) 비트코인">
+                        </div>
+                        <div>
+                            <label for="category">Choose a protocol:</label>
+                            <select id="category">
+                                <option selected>All</option>
+                                
+                            </select>
+                        </div>
+                        <div id="pricaRangeInput">
+                            <label for="price">select price range</label>
+                            <input type="range" id="priceRange" name="price" min="0" max="20" value="20">
+                            <output id="priceOutput">485165195</output>
+                        </div>
+                        <div>
+                            <button id="searchButton">Search results</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="right_body"></div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

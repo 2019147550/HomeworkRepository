@@ -1,0 +1,52 @@
+document.getElementById("priceRange").oninput = function () {
+    document.getElementById("priceOutput").value = Math.round(Math.exp(document.getElementById("priceRange").value));
+};
+let currentProduct;
+let toAdd;
+let products;
+let amountOfCurrentProducts = 10;
+let loadAmount = 4;
+let maxProducts;
+let rightColumn = document.getElementsByClassName("right_body")[0];
+let indexWrapper = document.getElementsByClassName("index__wrapper")[0];
+fetch('product.json').then(function (response) {
+    return response.json();
+}).then(function (json) {
+    products = json;
+    maxProducts = products.length
+    // initialize(products);
+    console.log(products.length);
+    toAdd = products.slice(amountOfCurrentProducts);
+    console.log(currentProduct);
+    loadProduct();
+}).catch(function (err) {
+    console.log('Fetch problem: ' + err.message);
+});
+
+indexWrapper.onscroll = () => {
+    console.log(inde/rapper.scrollY)
+    if (window.innerHeight + window.scrollY >=indexWrapper.innerHeight ) {
+        console.log("scroll");
+        if(maxProducts-amountOfCurrentProducts>=4){
+            toAdd = products.slice(amountOfCurrentProducts, amountOfCurrentProducts+loadAmount);
+            amountOfCurrentProducts += loadAmount;
+
+        }
+        else{
+            toAdd = products.slice(amountOfCurrentProducts, maxProducts);
+            amountOfCurrentProducts = maxProducts;
+        }
+        loadProduct();
+    }
+
+}
+function loadProduct(){
+    toAdd.forEach((element, index)=>{
+        let coinDiv = document.createElement("div");
+        coinDiv.setAttribute("class", "coin_block");
+        console.log(element.code);
+        coinDiv.innerHTML = element.code;
+        rightColumn.appendChild(coinDiv);
+    })
+};
+// function updateProduct();

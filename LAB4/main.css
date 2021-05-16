@@ -1,0 +1,313 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.view {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(70deg, rgb(21, 222, 236), rgb(167, 35, 194));
+    flex-direction: column;
+}
+.title {
+    font-family: "Roboto", sans-serif;
+    color: white;
+    font-size: 3rem;
+    /* margin-top: 5rem;
+     margin-bottom: ; */
+    position: absolute;
+    top: 0;
+    transform: translateY(2rem);
+    text-align: center;
+}
+.signup__input__container {
+    height: 350px;
+    border: 1px solid;
+    overflow-y: scroll;
+    border: 1px rgba(131, 131, 131, 0.959) solid;
+}
+.title__container {
+    display: flex;
+    flex-direction: row;
+}
+.login__title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    border-top: 2px blue solid;
+    border-bottom: 2px blue solid;
+    width: 80px;
+}
+.signup__title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    border-top: 2px blue solid;
+    border-bottom: 2px blue solid;
+    width: 100px;
+    margin-right: 1rem;
+}
+.login__link {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    transform: translateY(5px);
+    width: 80px;
+    color: black;
+    text-decoration: none;
+}
+.label {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.signup__label {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+input {
+    font-size: 1.5rem;
+    border-radius: 3rem;
+    background-color: rgb(235, 235, 235);
+    /* color: white; */
+    border: none;
+    padding: 0.2rem;
+    padding-left: 1rem;
+}
+.signup__input {
+    margin-bottom: 1rem;
+}
+.login__input {
+    margin-bottom: 1rem;
+}
+.login__wrapper {
+    /* background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(3px); */
+    background-color: white;
+    width: 30rem;
+    height: 30rem;
+    border-radius: 2rem;
+    padding: 3rem;
+}
+.checkbox__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100px;
+}
+.link__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 250px;
+}
+.link__container > a,
+button {
+    margin-top: 4rem;
+    width: 100px;
+    height: 40px;
+    border-radius: 40px;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login__button {
+    border: none;
+    color: white;
+    background: linear-gradient(70deg, rgb(43, 109, 231), rgb(150, 12, 192));
+    font-size: 1rem;
+    cursor: pointer;
+}
+.login__button:hover {
+    box-shadow: 2px 3px rgba(30, 30, 30, 0.2);
+}
+.signup__link {
+    color: white;
+    background-color: rgba(95, 95, 95, 0.959);
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+.signup__link:hover {
+    box-shadow: 2px 3px rgba(30, 30, 30, 0.2);
+}
+.signup__button {
+    border: none;
+    color: white;
+    background: linear-gradient(70deg, rgb(43, 109, 231), rgb(150, 12, 192));
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 0;
+    /* margin-top: 1rem; */
+}
+.cancel__button {
+    /* margin-top: 2rem; */
+    border: none;
+    color: white;
+    background: linear-gradient(120deg, rgb(243, 84, 84), rgb(235, 151, 83));
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 0;
+}
+.signup__button,
+.cancel__button {
+    transform: translateY(2rem);
+}
+/* ---------- index.html------------ */
+.index__wrapper {
+    width: 1020px;
+    border: 1px solid;
+    height: auto ;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.index__body{
+    height: auto;
+}
+.index__title {
+    font-size: 1.5rem;
+    color: black;
+    animation-name: slide_right_to_left;
+    animation-duration: 2s;
+    font-weight: bold;
+}
+.index__navlink {
+    margin-top: 1rem;
+}
+.index__navlink > a {
+    text-decoration: none;
+    color: black;
+    padding: 2px;
+}
+.index__navlink > a:hover {
+    color: rgba(158, 158, 158, 0.959);
+}
+.lined {
+    border-top: 2px rgba(240, 64, 41, 0.959) solid;
+    border-bottom: 2px rgba(240, 64, 41, 0.959) solid;
+}
+.index__body {
+    width: 1020px;
+    border: 1px solid;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+}
+.index__body > .title {
+    color: black;
+    position: relative;
+    text-align: left;
+    font-size: 1.5rem;
+    border-bottom: 2px rgba(141, 141, 141, 0.959) solid;
+    font-family: "Kiwi Maru", serif;
+    font-weight: 700;
+
+
+    transform: none;
+}
+
+.index__body > .left_body{
+    border: 1px solid;
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+.index__body > .right_body{
+    border:1px solid;
+    height: auto;
+    width:70%;
+    display: flex;
+    flex-direction: column;
+}
+.product__container {
+    display: flex;
+    flex-direction: row;
+}
+.product__box {
+    width: 400px;
+    height: 400px;
+    border: 1px solid;
+}
+.product__box > img {
+    width: 150px;
+    transition: width 2s ease;
+    border: 1px solid;
+}
+.product__box > img:hover {
+    width: 400px;
+}
+.index__introduction {
+    height: auto;
+}
+.index__introduction > .title {
+    color: black;
+    position: relative;
+    text-align: left;
+    font-size: 1.5rem;
+    transform: none;
+    margin-bottom: 1rem;
+    border: 3px rgba(20, 33, 207, 1) solid;
+}
+.column__container {
+    column-count: 2;
+    column-gap: 10px;
+    column-width: 500px;
+    column-rule-style: solid;
+    column-rule-color: rgba(32, 70, 240, 0.959);
+    column-rule-width: 1px;
+}
+/* inputs */
+#priceRangeInput{
+    display: flex;
+    flex-direction: column;
+}
+#searchTerm{
+    width: 250px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+#search_box{
+    padding: 1rem;
+}
+/* coin block */
+.coin_block{
+    width: 100%;
+    border: 1px solid;
+    min-height: 20vh;
+    height: auto;
+    padding: 1rem;
+}
+img.coin_img{
+    width: 50px;
+    margin-top: 1rem;
+}
+.description{
+    width: 70%;
+}
+.code{
+    font-size: 1.5rem;
+}
+.price{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+@keyframes slide_right_to_left {
+    0% {
+        transform: translate(1020px, 0);
+        color: rgb(150, 12, 192);
+    }
+    50% {
+        color: rgb(43, 109, 231);
+    }
+    100% {
+        transform: translate(0, 0);
+        color: black;
+    }
+}
