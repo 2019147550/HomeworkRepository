@@ -9,7 +9,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(70deg, rgb(21, 222, 236), rgb(167, 35, 194));
+    background: none;
     flex-direction: column;
 }
 .title {
@@ -159,6 +159,7 @@ button {
 .index__wrapper {
     width: 1020px;
     border: 1px solid;
+    min-height: 100vh;
     height: auto ;
     background-color: white;
     display: flex;
